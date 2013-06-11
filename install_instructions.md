@@ -36,10 +36,12 @@ BACK-END WEB DEVELOPMENT
 	*	Check install:
 		*	```$ which git```
 			*	should get:	 
-				/use/local/bin/git
+				/usr/local/bin/git
 
 6.	__Configure Git with your Name and Email__
-	*	Make sure you use the same email address for Git, GitHub, and Heroku.
+	*	Make sure you use the same email address for Git, GitHub, and Heroku.  
+    ```git config --global user.name "Your Name"```  
+    ```git config --global user.email "youremail@domain.com"```
 
 7.	__Install RVM with Ruby 2.0.0__
 	*	```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enable```
@@ -83,7 +85,7 @@ To get started you are going to use the Rails installer by rubyinstaller.org, an
 *	Grab the 1.9 version (we will upgrade later). This will set up your environment and you can start working with git right away.
 		
 
-__Extra command line tools: __
+__Extra command line tools:__
 	
 We will be using the command line a lot during this course. On Windows we also suggest installing gow. Gow is a bunch of unix command line tools ported to Windows. It will make it easy to follow in class with the same commands as your Mac buddies. https://github.com/bmatzelle/gow/wiki
 
