@@ -21,7 +21,7 @@ BACK-END WEB DEVELOPMENT
 
 
 4.	__Install homebrew from terminal:__
-	*	```$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)```
+	*	```$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
 	*	After install is complete: ```$ brew doctor```
 		*	__If you get following error:__ 
 		
