@@ -17,12 +17,12 @@ BACK-END WEB DEVELOPMENT
 	*	Go to: [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 	*	Log in with your Apple ID and password (same as iTunes).
 	*	Install Command Line Tools for your operating system.
-	*	Check install: ```$ gcc --version```
+	*	Check install: ```gcc --version```
 
 
 4.	__Install homebrew from terminal:__
-	*	```$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
-	*	After install is complete: ```$ brew doctor```
+	*	```ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
+	*	After install is complete: ```brew doctor```
 		*	__If you get following error:__ 
 		
 				"Warning: Experimental support for using Xcode without the "Command Line Tools".
@@ -31,10 +31,10 @@ BACK-END WEB DEVELOPMENT
 
 
 5.	__Install Git__
-	*	```$ brew update```
-	*	```$ brew install git```
+	*	```brew update```
+	*	```brew install git```
 	*	Check install:
-		*	```$ which git```
+		*	```which git```
 			*	should get:	 
 				/usr/local/bin/git
 
@@ -44,20 +44,20 @@ BACK-END WEB DEVELOPMENT
     ```git config --global user.email "youremail@domain.com"```
 
 7.	__Install RVM with Ruby 2.0.0__
-	*	```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enable```
+	*	```\curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enable```
 		This will take a few minutes, and once it’s done, quit and relaunch Terminal, then run this command:
-	*	```$ type rvm | head -1```
+	*	```type rvm | head -1```
 		If you get rvm is a function, that means RVM was successfully installed. 
 	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
 		*	For RVM
-			*	```$ rvm -v```
+			*	```rvm -v```
 				
 				You should get 
 
 					rvm 1.20.13 or higher.
 		* 	For Ruby
 
-			*	```$ ruby -v```
+			*	```ruby -v```
 			
 				You should get 
 
@@ -65,7 +65,7 @@ BACK-END WEB DEVELOPMENT
 
 		* 	For Rails
 
-			*	```$ rails -v```
+			*	```rails -v```
 				
 				You should get 
 				
