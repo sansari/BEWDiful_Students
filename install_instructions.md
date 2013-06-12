@@ -54,7 +54,7 @@ BACK-END WEB DEVELOPMENT
 				
 				You should get 
 
-					rvm 2.0.0 or higher.
+					rvm 1.20.13 or higher.
 		* 	For Ruby
 
 			*	```$ ruby -v```
