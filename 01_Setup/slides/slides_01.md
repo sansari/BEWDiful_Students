@@ -131,7 +131,6 @@ View the installation guide here:
 
 -	[tinyurl.com/bewd-install](http://tinyurl.com/bewd-install)
 
-
 ---
 
 
@@ -205,6 +204,8 @@ For Windows:
 6. Make it executable
 7. BONUS: Modify the script in some way to accept arguments.
 
+[Answer](../code_alongs/coa_command_line_basics_code_along.sh)
+
 
 ---
 
@@ -218,6 +219,8 @@ For Windows:
 -	Create a file and use the first argument passed as the name.
 -	Insert the contents of the second argument into the file
 -	Show the contents of the completed file to the terminal
+
+[Answer](../exercises/ex_command_line_basics_exercise.sh)
 
 ---
 
@@ -241,6 +244,7 @@ For Windows:
 -	Create 3 files config, log, runner.rb
 -	Tell git to add this folder as a new repository
 -	Tell git to track the 3 files in the repo
+
 
 ---
 
@@ -267,6 +271,8 @@ For Windows:
 -	Create a new repository without a readme named first\_push
 -	Go back to your folder and add the remote branch
 -	PUSH your code to GitHub
+
+[Answer](../code_alongs/coa_git_basics_code_along.sh)
 
 ---
 
@@ -300,6 +306,8 @@ For Windows:
 	-	```git fetch instructor``` then ```git merge instructor/master```
 	- 	or just ```git pull instructor master``` (auto-merges)
 
+[Answer](../code_alongs/coa_git_in_class.sh)
+
 ---
 
 
@@ -309,6 +317,8 @@ For Windows:
 -	Commit your changes
 -	Push them to your repository
 -	Submit a pull request for your instructor to access those changes
+
+[Answer](../exercises/ex_git_it_together.sh)
 
 ---
 
