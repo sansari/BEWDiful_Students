@@ -2,7 +2,7 @@
 
 #BEWD - Variables and Conditional Logic
 
-###Instructor Name
+###Salman Ansari
 
 ---
 
@@ -24,13 +24,17 @@
 
 ##QUIZ
 1.	How do I change directories using the command line?
+    * ```cd```
 2.	What is Git and GitHub?
+    * Git is a version control management system, github is a hosted git service
 3.	How do I add files to git?
+    * ```git add <file>```
 4.	What is a GitHub Repository?
+    * A repository in which all of your code is under version control
 5.  What is the correct way to push changes to your GitHub repo?
 	a. git pull origin master
 	b. git commit -m "push to GitHub"
-	c. git push origin master
+	c. __git push origin master__
 
 ---
 
@@ -101,6 +105,7 @@ defined? do else elsif end in module next nil not return self super then true wh
 
 ![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Code_along_icon_md.png)
 ##Robot
+[Answer](../code_alongs/coa_robot.md)
 
 
 ---
@@ -124,8 +129,8 @@ defined? do else elsif end in module next nil not return self super then true wh
 ##Variables
 ###Store Values
 
-		name = "Steven"
-		=> name # "Steven"
+		name = "Salman"
+		=> name # "Salman"
 		age = 2013 - 1983
 		=> age # 30
 ---
@@ -146,6 +151,7 @@ defined? do else elsif end in module next nil not return self super then true wh
 ##Teddit - Strings
 
 Teddit is a news aggregator we will build during this course.
+[Answer](../code_alongs/coa_stdnt_teddit_strings.rb)
 
 ---
 
@@ -188,6 +194,7 @@ It's either TRUE or FALSE
 
 ![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Code_along_icon_md.png)
 ##Booleans
+[Answer](../code_alongs/coa_stdnt_boolean.rb)
 
 ---
 
