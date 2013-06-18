@@ -305,7 +305,13 @@ Open: ```03_Collection_Loops/exercises/ex_arrays.rb```
 ##Symbols
 ###Primarily used as keys for hashes
 
-	ga_markets = {:NYC => "New York City", :LA => "Los Angeles", :SYD => "Sydney", :LDN => "London"}
+	ga_markets = {}
+	ga_markets = {:NYC => "New York City"}
+	ga_markets[:LA] = "Los Angeles"
+	ga_markets
+	
+	>> {:NYC => "New York City", :LA => "Los Angeles"}
+	
 
 ---
 
