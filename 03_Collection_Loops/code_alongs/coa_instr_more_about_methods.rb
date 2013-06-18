@@ -10,7 +10,7 @@ def some_method(story, rating)
   "RESULT IS #{story} WITH RATING #{rating}"
 end
 
-some_method("hello!" , 5) # => RESULT IS hello! WITH RATING 5
+some_method("hello!", 5) # => RESULT IS hello! WITH RATING 5
 some_method("say something!", 10) # => RESULT IS say something! WITH RATING 100
 
 # Methods can be given default arguments.
