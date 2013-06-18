@@ -9,12 +9,20 @@
 
 ##Agenda
 
+*	Review: Methods
 *	Iteration - Loops
 *	Collections
 	*	Arrays
 	*	Hashes
 
-	
+
+---
+
+<img id ='icon' src="../../assets/ICL_icons/Code_along_icon_md.png">
+##Methods
+
+Open: 03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb
+
 
 ---
 
@@ -73,26 +81,22 @@
 
 
 
-##Iteration (Other Loops) 
+##Iteration (Ruby-esque Loops)
 ###Less common in Ruby 
 
 *	These loops are less common in Ruby, but good to know as a programmer.
 	
+	*	X.times
 	*	upto
-	*	downto 
-	*	loop
+	*	downto
 		
 * 	For additional help with syntax, see the Resources at the end of the slides.
  
 ---
 
 
-##Iteration Loops
+##Conditional Loops
 
-	10.downto(1) do |count|
-		puts "Looping"
-	end
-	
 	count = 10
 	while count > 0
 		puts "Looping"
@@ -110,7 +114,7 @@
 		break if count < 1 
 		puts "Looping"
 		count -= 1
-	end
+	end	
 	
 ---
 
@@ -118,7 +122,7 @@
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Loop 
 
-Open exercise: ex_loop.rb
+Open: 03_Collection_Loops/exercises/ex_loop.rb
 
 ---
 
@@ -222,7 +226,7 @@ to irb!
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Arrays
 
-ex_arrays.rb
+Open: 03_Collection_Loops/exercises/ex_arrays.rb
 
 ---
 
@@ -243,17 +247,21 @@ ex_arrays.rb
 
 ![Labeled Accordion](../../assets/ruby/labeled_accordian.jpeg)
 
+*	Often referred to as dictionaries
+*	Each entry in a hash needs a *key* and a *value*
+*	If you access a hash at a specific key, it will return the value at that key
+
 ---
 
 
-##Hases
+##Hashes
 ###Find by key
 
 	ga_markets = {"NYC" => "New York City", "LA" => "Los Angeles", "SYD" => "Sydney", "LDN" => "London"}
 	
 	ga_markets["NYC"]	
-	ga_markets[["LA"]
-	ga_markets[["SYD"]
+	ga_markets["LA"]
+	ga_markets["SYD"]
 	
 "New York City"	
 
@@ -268,27 +276,34 @@ ex_arrays.rb
 ###Setting Values
 
 	user_hash = {}
-	user_hash["name"] = "Steven"
+	user_hash["name"] = "Salman"
 	user_hash["favorite_color"] = "Green"
+	user_hash
 
-
-{"name"=>"Steven", "favorite_color"=>"Green"}
-
----
-
-
-##Hashes
-###Symbols
-
--	Commonly used for hashes
-	
-		:i_am_a_symbol
+	>> {"name"=>"Salman", "favorite_color"=>"Green"}
 
 ---
 
 
 ##Symbols
-###Used as keys for hashes
+###New Ruby type
+
+-	A symbol is a special type of object in ruby, used extensively
+-	It is always preceded by a colon
+-	Cannot contain spaces or numbers
+-	Symbols are used because:
+	-	they are immutable and take less memory
+	-	they are easier to compare to other objects
+	-	they are cleaner in syntax
+-	Examples: 
+	-	```:hello```
+	-	```:this_is_a_symbol```
+
+---
+
+
+##Symbols
+###Primarily used as keys for hashes
 
 	ga_markets = {:NYC => "New York City", :LA => "Los Angeles", :SYD => "Sydney", :LDN => "London"}
 
@@ -297,15 +312,32 @@ ex_arrays.rb
 
 
 ##Hash
-###Messages
+###Methods
 
-	user = {user_name: "StevenNunez", email: "steven.nunez@gmail.com"}
+	user = {:user_name => "SalmanAnsari", :email => "salman.ansari@gmail.com"}
 	
 	user.has_key? :email #true
 	user.key? :email #true
 	user.include? :email #true
 	
-	user.has_value? "StevenNunez" #true
+	user.has_value? "SalmanAnsari" #true (note: extremely inefficient!)
+	
+---
+
+##Hash
+###Ruby 1.9+ Alternate Syntax 
+	
+	# Alternate syntax for ruby 1.9+
+	
+	user = {:user_name => "SalmanAnsari", :email => "salman.ansari@gmail.com"}
+	
+	# becomes
+	
+	user = {user: "SalmanAnsari", email: "salman.ansari@gmail.com"}
+	
+	# a little bit more concise
+	# more closely matches JSON format
+	# considered an 'alternate' syntax, not a replacement
 
 ---
 
@@ -314,24 +346,25 @@ ex_arrays.rb
 ##Collections
 ###Array of Hashes
 
+	users = [
+			{:user => "Salman Ansari", :role => "Instructor"},
+			{:user => "Brooks Swinnerton", :role=> "TA"}
+			{:user => "Brian Fountain", :role => "TA"] 
+	]
 
-		users = [
-				{:user => "Steven Nunez", :role => "Instructor"},
-				{:user => "Eddie Washington", :role=> "TA"}
-				{:user => "Stephanie Morillo", :role => "TA"] 
-		]
 
-
-		#Alternate syntax
-		users = [
-			{user: "Steven Nuñez", role: "Instructor"},
-			{user: "Eddie Washington", role: "TA"},
-			{user: "Stephanie Morillo", role: "TA"}
-		]
+	# Alternate syntax for Ruby 1.9+
+	
+	users = [
+		{user: "Salman Ansari", role: "Instructor"},
+		{user: "Brooks Swinnerton", role: "TA"},
+		{user: "Brian Fountain", role: "TA"}
+	]
+	
+	
+For those want to know more about 1.9 changes: [http://tinyurl.com/ruby-19-change](http://tinyurl.com/ruby-19-change)
 	
 ---
-
-
 
 
 ##Iterating Over Collections
@@ -349,9 +382,9 @@ ex_arrays.rb
 ##Lab Time
 ###Teddit Collections
 
-ex_teddit_hashes.rb
+Open: 03_Collection_Loops/exercises/ex_teddit_hashes.rb
 
-You'll need your conditional_teddit.rb solution to get started.
+You'll need your conditional_teddit.rb solution to get started (or use ex_conditional_teddit_SN_solution.rb in the 03_Collection_Loops/exercises folder).
 
 ---
 
@@ -370,7 +403,6 @@ Continue work on Secret Number. Due next class (lesson 4)
 ---
 
 
-<div id="resources">
 ## Resources: Collections, Loops and APIs 
 
 
