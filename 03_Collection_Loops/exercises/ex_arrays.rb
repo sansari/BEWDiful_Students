@@ -1,5 +1,3 @@
-#Fill in the blanks. The assert_equal method is a test, please ignore.
-
 def assert_equal(expected, actual)
   unless expected == actual
     abort "Expected #{expected} to match #{actual} on line #{caller.first.split(":")[1]}"
@@ -9,6 +7,13 @@ end
 def ___(*arguments)
   abort  "You have to fill in the blank on line #{caller.first.split(":")[1]}".center(100, "*")
 end
+
+
+
+#### Start below this line ####
+# Fill in the blanks with the appropriate values
+
+
 
 # Create an empty array named categories using a literal
 categories = ___
@@ -21,7 +26,7 @@ assert_equal categories, []
 # Add 3 stories to the categories array. Each time using a different method.
 categories.___("Music")
 categories.___("Weather")
-categories.___("Florida")
+categories ___ ("Florida")
 assert_equal ["Florida", "Music", "Weather"], categories.sort
 
 # Ensure only unique categories get stored
@@ -49,7 +54,7 @@ assert_equal(true, categories.include?("Family"))
 
 # Print all of the Array elements as a comma separated string in alphabetical order
 # persist the sorting of categories 
-assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.___.___)
+assert_equal("Animals, Family, Florida, Music, Shopping, Weather", categories.___!.___)
 assert_equal(%w(Animals Family Florida Music Shopping Weather), categories)
 
 # Remove the first category from the array and print it to the screen "First Category: Category here"
