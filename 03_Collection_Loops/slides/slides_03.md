@@ -43,7 +43,7 @@ Open: ```03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb```
 	3.times do
 		puts "going…"
 	end
-	puts "gone""
+	puts "gone"
 	
 	# going...
 	# going...
@@ -169,7 +169,7 @@ Open: ```03_Collection_Loops/exercises/ex_loop.rb```
 	my_array = ["NYC", "LA", "SYD", "LDN"]
 	my_array[0] #"NYC"	
 	my_array[1] #"LA"	
-	my_array[-1] #"SYD"			
+	my_array[-1] #"LDN"
 
 ---
 
@@ -205,7 +205,7 @@ Open: ```03_Collection_Loops/exercises/ex_loop.rb```
 ##Arrays
 ###Array Methods
 
-	name = "Steven"
+	name = "Salman"
 	name.upcase
 
 	my_array = ["NYC", "LA", "SYD", "LDN"]
@@ -368,7 +368,7 @@ Open: ```03_Collection_Loops/exercises/ex_arrays.rb```
 
 	ga_markets = ["NYC", "LA", "SYD", "LDN"]
 
-	ga_markets.each {|market| puts name}
+	ga_markets.each {|market| puts market}
 
 
 ---
