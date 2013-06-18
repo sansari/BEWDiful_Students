@@ -21,7 +21,7 @@
 <img id ='icon' src="../../assets/ICL_icons/Code_along_icon_md.png">
 ##Methods
 
-Open: ```03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb```
+Open: [03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb](../code_alongs/coa_instr_more_about_methods.rb)
 
 
 ---
@@ -122,7 +122,7 @@ Open: ```03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb```
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Loop 
 
-Open: ```03_Collection_Loops/exercises/ex_loop.rb```
+Open: [03_Collection_Loops/exercises/ex_loop.rb](../exercises/ex_loop.rb)
 
 ---
 
@@ -226,7 +226,7 @@ to irb!
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Arrays
 
-Open: ```03_Collection_Loops/exercises/ex_arrays.rb```
+Open: [03_Collection_Loops/exercises/ex_arrays.rb](../exercises/ex_arrays.rb)
 
 ---
 
@@ -378,9 +378,9 @@ Open: ```03_Collection_Loops/exercises/ex_arrays.rb```
 ##Lab Time
 ###Teddit Collections
 
-Open: ```03_Collection_Loops/exercises/ex_teddit_hashes.rb```
+Open: [03_Collection_Loops/exercises/ex_teddit_hashes.rb](../exercises/ex_teddit_hashes.rb)
 
-You'll need your conditional_teddit.rb solution to get started (or use ```03_Collection_Loops/exercises/ex_conditional_teddit_SN_solution.rb```).
+You'll need your conditional_teddit.rb solution to get started (or use [03_Collection_Loops/exercises/ex_conditional_teddit_SN_solution.rb](../exercises/ex_conditional_teddit_SN_solution.rb)).
 
 ---
 
