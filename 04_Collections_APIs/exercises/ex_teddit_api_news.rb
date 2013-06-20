@@ -64,5 +64,6 @@ show_message("Welcome to Teddit! a text based news aggregator. Get today's news 
 
 stories = get_from_reddit
 # stories += get_from_digg
+# stories += get_from_mashable
 
 show_all_stories stories
