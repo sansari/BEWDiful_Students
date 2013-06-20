@@ -123,6 +123,7 @@ Open: [03_Collection_Loops/code_alongs/coa_instr_more_about_methods.rb](../code_
 ##Loop 
 
 Open: [03_Collection_Loops/exercises/ex_loop.rb](../exercises/ex_loop.rb)
+[Answer](../exercises/ex_loop_solution.rb)
 
 ---
 
@@ -227,6 +228,7 @@ to irb!
 ##Arrays
 
 Open: [03_Collection_Loops/exercises/ex_arrays.rb](../exercises/ex_arrays.rb)
+[Answer](../exercises/ex_arrays_solution.rb)
 
 ---
 
@@ -387,6 +389,8 @@ Open: [03_Collection_Loops/exercises/ex_arrays.rb](../exercises/ex_arrays.rb)
 Open: [03_Collection_Loops/exercises/ex_teddit_hashes.rb](../exercises/ex_teddit_hashes.rb)
 
 You'll need your conditional_teddit.rb solution to get started (or use [03_Collection_Loops/exercises/ex_conditional_teddit_SN_solution.rb](../exercises/ex_conditional_teddit_SN_solution.rb)).
+
+[Answer](../exercises/ex_teddit_hashes_solution.rb)
 
 ---
 
