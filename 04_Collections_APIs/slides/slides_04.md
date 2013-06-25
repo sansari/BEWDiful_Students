@@ -32,7 +32,8 @@ TIME : 30 min
 
 *	But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
 
-*	For numbers which are multiples of both three and five print “FizzBuzz”.
+*	For numbers which are multiples of both three and five print “FizzBuzz”.   
+[Answer](../exercises/qf_fizz_buzz.rb)
 
 ---
 
@@ -107,6 +108,7 @@ Getting Stories
 
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Teddit API News
+[Answer](../exercises/ex_teddit_api_news.rb)
 
 ---
 
