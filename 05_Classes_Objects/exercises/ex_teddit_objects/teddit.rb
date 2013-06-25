@@ -36,7 +36,7 @@ def add_manual_stories
 end
 
 def show_story_board
-  StoryBoard.stories.each do |story| #StoryBorad.stories returns an array of stories
+  StoryBoard.stories.each do |story| #StoryBoard.stories returns an array of stories
     show_message story 
   end
 end
