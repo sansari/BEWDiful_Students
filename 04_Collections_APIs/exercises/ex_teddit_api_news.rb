@@ -48,22 +48,40 @@ end
 
 
 def get_from_reddit
-  # implementation goes here
+  response = RestClient.get("http://reddit.com/top.json")
+  parsed_response = JSON.load(response)
+  parsed_response["data"]["children"].map do |reddit|
+    story = { title: reddit["data"]["title"], category: reddit["data"]["subreddit"] }
+    calculate_upvotes(story)
+    story
+  end
 end
 
-#def get_from_mashable
-  # implementation goes here
-#end
+def get_from_mashable
+  response = RestClient.get("http://mashable.com/stories.json")
+  parsed_response = JSON.load(response)
+  parsed_response["new"].map do |mashable|
+    story = { title: mashable["title"], category: mashable["channel"] }
+    calculate_upvotes(story)
+    story
+  end
+end
 
-#def get_from_digg
-  # implementation goes here
-#end
+def get_from_digg
+  response = RestClient.get("http://digg.com/api/news/popular.json")
+  parsed_response = JSON.load(response)
+  parsed_response["data"]["feed"].map do |digg|
+    story = { title: digg["content"]["title"], category: digg["content"]["tags"].map {|tag| tag["display"]}.join(", ") }
+    calculate_upvotes(story)
+    story
+  end
+end
 
 
 show_message("Welcome to Teddit! a text based news aggregator. Get today's news tomorrow!")
 
 stories = get_from_reddit
-# stories += get_from_digg
-# stories += get_from_mashable
+stories += get_from_digg
+stories += get_from_mashable
 
 show_all_stories stories
