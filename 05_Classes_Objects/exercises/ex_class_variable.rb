@@ -9,23 +9,17 @@
 
 class SuperHero
   @@superheros = []
-  def initialize(name)
-    @name = name
-    @@superheros << self
+
+  def self.add_hero(name)
+    @@superheros << name
   end
 
-  def superheros
-    @@superheros
-  end
-
-  def to_s
-    @name
+  def self.print_heroes
+    puts "#{@@superheros.join(',')}"
   end 
 
 end 
 
-superman= SuperHero.new("Clark Kent")
-ironman = SuperHero.new("Tony Stark")
+SuperHero.add_hero("Clark Kent")
 
-puts ironman.superheros
-
+puts SuperHero.print_heroes
