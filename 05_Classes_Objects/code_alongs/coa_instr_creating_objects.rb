@@ -7,7 +7,7 @@
  jimmy[:name] = "Jimmy Mazzy"
  jimmy[:major] = "Math"
  jimmy[:course] = "Math"
- jimmy[:grade]= "A"
+ jimmy[:grade] = "A"
 #
  pepe = {}
  pepe[:name]= "Pepe Phaenagrotis"
