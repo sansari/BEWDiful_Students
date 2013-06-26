@@ -10,8 +10,12 @@ class Laptop
 		@power = false
 	end
 
-	def power?(state)
-		@power = state
+	def power?
+	  if @brand == "Apple"
+      @power = true
+    else
+      @power = false
+    end
 	end
 
 	def display
