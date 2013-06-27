@@ -1,10 +1,10 @@
 class Game
   def initialize(name)
-    @player = Player.new(name).name
+    player = Player.new(name).name
     @secret_number = SecretNumber.new.secret_number
     @guesses_left = 3
 
-    show_rules(@player)
+    show_rules(player)
     start_game
   end
 
