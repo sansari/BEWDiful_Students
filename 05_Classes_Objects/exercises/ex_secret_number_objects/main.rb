@@ -46,3 +46,16 @@
 # Add helpful comments to your code to document what each section does.
 # 
 # Tips: Copy paste your code from homework 1 where necessary. 
+
+require_relative 'lib/game.rb'
+require_relative 'lib/player.rb'
+require_relative 'lib/secret_number.rb'
+
+puts "Welcome to the secret number game!"
+puts "This game was created by Brooks"
+puts
+
+puts "What's your name?"
+name = gets.strip.capitalize
+
+game = Game.new(name)
