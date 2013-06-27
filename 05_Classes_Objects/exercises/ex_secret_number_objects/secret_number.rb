@@ -14,9 +14,17 @@
 #
 # Below is a description of each class and some guidelines for each. 
 #
-# Main
-#	The main class is where the game begins. This class should tell the player who made it.
-#	Ask the player for their name and instantiate the Game class.
+# Runner
+#	This is the main file that you will run (a.k.a. your 'runner' file'). You will invoke this with ruby runner.rb
+# The runner.rb file is NOT a class, but is just a file with Ruby that will perform tasks and create classes
+# It will require other classes from other files as needed
+# This file will contain Ruby code that will:
+# - Say hello to the user
+# - Ask for the player's name
+# - Create a new Player instance with the name
+# - Create a new Game instance, and pass it the Player instance as an argument
+# - Tell the game to display the rules
+# - Tell the game to start
 #
 # Secret_Number
 #   This class should initiate an array of numbers that range between 1 - 10.
@@ -24,7 +32,7 @@
 #   This way the secret number is also a secret to you.
 #
 # Player
-#  Should initialize the player's name. 
+#  Should initialize and store the player's name. 
 #
 # Game
 #	This class holds most of the game logic and should:
