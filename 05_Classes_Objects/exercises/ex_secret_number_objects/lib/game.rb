@@ -1,21 +1,21 @@
 class Game
-  def initialize(name)
-    player = Player.new(name).name
+  def initialize(player)
+    @player = player.name
     @secret_number = SecretNumber.new.secret_number
     @guesses_left = 3
-
-    show_rules(player)
-    start_game
   end
 
-  def show_rules(player)
-    puts "Okay #{player}, so here are the rules:"
+
+  def show_rules
+    puts "Okay #{@player}, so here are the rules:"
     puts " You must guess a number between one and ten"
     puts " You will only have three tries to get it right"
     puts
   end
 
-  def start_game
+  def start
+    show_rules
+
     while @guesses_left > 0
       guess = ask_input
        
