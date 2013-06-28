@@ -10,7 +10,7 @@
 ###############################################################################
 # Lets create an Object Oriented version of our Secret Number Game.
 #	
-# Your updated game should have 4 classes (Main, Secret_Number, Game and Player)
+# Your updated game should have 3 classes (SecretNumber, Game, and Player)
 #
 # Below is a description of each class and some guidelines for each. 
 #
