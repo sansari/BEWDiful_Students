@@ -23,7 +23,6 @@
 # - Ask for the player's name
 # - Create a new Player instance with the name
 # - Create a new Game instance, and pass it the Player instance as an argument
-# - Tell the game to display the rules
 # - Tell the game to start
 #
 # Secret_Number
@@ -36,7 +35,7 @@
 #
 # Game
 #	This class holds most of the game logic and should:
-#		Welcome players and inform them of the game rules.
+#		Inform player of the game rules with their name.
 #		Initialize the Player class.
 # 		Initialize the Secret Number class.
 # 		Prompt the user to choose a number, verify if the user guessed correctly.
