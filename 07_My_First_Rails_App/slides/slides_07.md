@@ -17,6 +17,37 @@
 
 ---
 
+##HEADS UP: Put in the work
+### You need to be spending lots of time outside of class learning
+
+*	Simply attending lectures is not enough -- need to ensure you are putting in the extra time outside of classes to stay ahead
+*	Lectures should be considered a high-level guide of what you need to study/practice
+*	The high-level here is that there is a lot to learn. This course only spends 6 hours a week in lectures and *assumes* that you are spending the rest of your time working. 
+*	This course should be filling in the gaps of your knowledge (not the other way around).
+*	You should be going beyond the assigned exercises/homework. Those are the minimum.
+
+Remember, this is a boot-camp style program. Put in the work!
+
+---
+
+## HELP! I still don't understand some things in Ruby
+### Is it too late?
+
+Of course not.
+
+*	Given the extra time you have this week, spend some time to review Ruby. 
+*	You don't necessarily have to go through all of the material in each guide, but make sure to focus on areas that you're having trouble with.
+
+	1. Go through past lecture slides, exercises, and code-alongs.
+	2. Go through Ruby the Hard Way: http://ruby.learncodethehardway.org/ 
+	3. Go through CodeAcademy's Ruby section: http://www.codecademy.com/tracks/ruby
+	4. Read Why's Poignant Guide: http://www.rubyinside.com/media/poignant-guide.pdf
+	5. Find other resources online!
+	
+…and remember to have fun! :)
+
+---
+
 ##Where does Rails fit in?
 ### High-level: Client (Browser) <-> Server (Rails)
 
