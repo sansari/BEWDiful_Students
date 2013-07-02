@@ -39,11 +39,12 @@ Of course not.
 *	You don't necessarily have to go through all of the material in each guide, but make sure to focus on areas that you're having trouble with.
 
 	1. Go through past lecture slides, exercises, and code-alongs.
-	2. Go through Ruby the Hard Way: http://ruby.learncodethehardway.org/ 
-	3. Go through CodeAcademy's Ruby section: http://www.codecademy.com/tracks/ruby
-	4. Read Why's Poignant Guide: http://www.rubyinside.com/media/poignant-guide.pdf
+	2. Go through [Ruby the Hard Way](http://ruby.learncodethehardway.org/)
+	3. Go through [CodeAcademy's Ruby section](http://www.codecademy.com/tracks/ruby)
+	4. Read [Why's Poignant Guide to Ruby](http://www.rubyinside.com/media/poignant-guide.pdf)
 	5. Find other resources online!
 	
+
 …and remember to have fun! :)
 
 ---
