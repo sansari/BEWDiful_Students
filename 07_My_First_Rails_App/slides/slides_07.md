@@ -51,13 +51,12 @@
 ###Are You Ready?
 
 
-``` gem install rails --version 4.0.0 --no-ri --no-rdoc```
-``` rails -v```
-		
+	$ gem install rails --version 4.0.0 --no-ri --no-rdoc
+	$ rails -v		
 
 * Rails v4.0.0 Final just released as of June 25th, 2013!
 * If you are on Mountain Lion, and see an error "make: /usr/bin/gcc-4.2: No such file or directory", then visit http://cczona.com/blog/2012/07/fix-for-make-usrbingcc-4-2-no-such-file-or-directory/
-* If you don't still don't see 4.0.0, raise your hand
+* If you don't still don't see 4.0.0, raise your hand* 
 
 ---
 
