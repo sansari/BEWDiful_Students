@@ -15,7 +15,7 @@
 # Below is a description of each class and some guidelines for each. 
 #
 # Runner
-#	This is the main file that you will run (a.k.a. your 'runner' file'). You will invoke this with ruby runner.rb
+# This is the main file that you will run (a.k.a. your 'runner' file'). You will invoke this with ruby runner.rb
 # The runner.rb file is NOT a class, but is just a file with Ruby that will perform tasks and create classes
 # It will require other classes from other files as needed
 # This file will contain Ruby code that will:
@@ -34,15 +34,30 @@
 #  Should initialize and store the player's name. 
 #
 # Game
-#	This class holds most of the game logic and should:
-#		Inform player of the game rules with their name.
-#		Initialize the Player class.
-# 		Initialize the Secret Number class.
-# 		Prompt the user to choose a number, verify if the user guessed correctly.
-# 		If the user guesses incorrectly let them know if they were too high or too low.
-#		Monitor how many guesses the player has before the game is over.
+# This class holds most of the game logic and should:
+#   Welcome players and inform them of the game rules.
+#   Initialize the Player class.
+#     Initialize the Secret Number class.
+#     Prompt the user to choose a number, verify if the user guessed correctly.
+#     If the user guesses incorrectly let them know if they were too high or too low.
+#   Monitor how many guesses the player has before the game is over.
 #
 # In creating your game, make sure it has arrays, hashes and all functionality is wrapped in methods.
 # Add helpful comments to your code to document what each section does.
 # 
 # Tips: Copy paste your code from homework 1 where necessary. 
+
+require_relative 'lib/game.rb'
+require_relative 'lib/player.rb'
+require_relative 'lib/secret_number.rb'
+
+puts "Welcome to the secret number game!"
+puts "This game was created by Brooks"
+puts
+
+puts "What's your name?"
+name = gets.strip.capitalize
+player = Player.new(name)
+
+game = Game.new(player)
+game.start
