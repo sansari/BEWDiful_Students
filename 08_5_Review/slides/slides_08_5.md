@@ -78,6 +78,7 @@ OR
 
 	rails server
 OR
+
 	rails s
 	
 * Go to localhost:3000/books in browser
@@ -163,7 +164,7 @@ _Hint:_ app/views
 ##The Dispatcher
 ###routes.rb
 
-*	Located at config/routes.rb*	Connects URLs to code	* Used for mapping urls to your code*	Current Routes: $ rake routes	*	Rails 4: Can be seen at http://localhost:3000/rails/info/routes
+*	Located at config/routes.rb*	Connects URLs to code	* Used for mapping urls to your code*	Current Routes: `rake routes`	*	Rails 4: Can be seen at http://localhost:3000/rails/info/routes
 
 ![](../../assets/rails/routes.png)
 
@@ -217,7 +218,7 @@ Controllers:
 ###Params
 
 *	http://localhost:3000/games/secret_number/7
-	*	7 is a param	
+	*	7 is a param and can be taken from the params hash as so: `params[:id]` (unless configured otherwise in your config/routes.rb file)
 
 ---
 
@@ -266,12 +267,30 @@ Controllers:
 <img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
 ##Lab Time
 
-Add Rock Paper Scissors to Games on Rails
+![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Exercise_icon_md.png)
+
+
+##Rock Paper Scissors
+####Task Instructions
+
+* Add the game Rock Paper Scissors to the "Games on Rails App".
+
+* Create a route that goes from ```/games/rock_paper_scissors/:throw``` to ```games#rock_paper_scissors_play```
+
+* Use params[:throw] as a user's choice
+
+* Create an array of available options for the computer to guess from (rock, paper or scissors), and then sample from that array. 
+
+* Create a page for the rock_paper_scissors_play action and pass instance variables to the view to show the computer guess and the player guess
+
+* The user will guess by going to: ```http://localhost:3000/games/rock_paper_scissors/rock```
+
+* Figure out if the user has won/lost in the controller and display the result in the view
 
 ---
 
 ##Catch up
 
-Feel free to ask questions about your midterm projects, homeworks, etc.
+Feel free to ask questions about your midterms, homeworks, etc.
 
 ---
