@@ -264,9 +264,6 @@ Controllers:
 
 ---
 
-<img id ='icon' src="../../assets/ICL_icons/Exercise_icon_md.png">
-##Lab Time
-
 ![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Exercise_icon_md.png)
 
 
