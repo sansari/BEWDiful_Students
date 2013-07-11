@@ -10,8 +10,8 @@
 ##Agenda
 *	Review
 	*	Quick Fire - Movies App
-* 	Databases
 *	Models 
+	*	Databases
 	* 	Generating Models
 	*	Migrations	
 	*	seeds.rb
@@ -20,13 +20,6 @@
 
 ---
 
-
-##Review
-###Routes, Views and Controllers
-
-![Request Response Diagram](../../assets/rails/response_request.png)
-
----
 
 ##Review
 
@@ -38,6 +31,34 @@
 ---
 
 
+##Review
+###Routes, Views and Controllers
+
+![Request Response Diagram](../../assets/rails/response_request.png)
+
+---
+
+
+##Review: MVC
+###Model View Controller
+
+*	The controller interacts with the Model
+*	The controller renders the view, passing it Model data (using instance variables)
+*	The view and the model do not interact (need the controller)
+
+![MVC Diagram](../../assets/rails/mvc_diagram.png)
+
+---
+
+##Models
+### Talking to the database
+* 	Models are needed to talk to the database
+* 	We need to use the database to store *persistent* data (lives beyond a request lifecycle)
+* 	Models simplify the task of working with a database
+* 	Each model is used to talk to a specific table (e.g. User model for Users table)
+* 	Rails models have special functionality to allow you to easily lookup data from the table, or make changes without having to use SQL directly* 	
+
+---
 
 
 ##Database
@@ -62,7 +83,7 @@
 ---
 
 ##Database
-###Vocab
+###Tables
 
 Table: A database is made up of a collection of tables. Example below is a list of Employees.
 
@@ -71,7 +92,7 @@ Table: A database is made up of a collection of tables. Example below is a list 
 ---
 
 ##Database
-###Vocab
+###SQL
 
 SQL: Structured Query Language
 A programming language used to search and save data to databases.
@@ -80,18 +101,9 @@ A programming language used to search and save data to databases.
 
 ---
 
-##Models
-###Models talk to the Database
-
-*	Models are how Rails applications interact with the database
-*	Each model is used to talk to a specific table (e.g. User model for Users table)
-*	Rails models have special functionality to allow you to easily lookup data from the table, or make changes without having to use SQL directly
-
-
----
 
 ##Model
-###Code Along Described
+###Code Along: Shirts
 
 Shirt Management app is an application we will build incrementally during class.
 
@@ -185,8 +197,7 @@ Let's Add a T-Shirt Model.
 
 *	Fast and easy way to add data to your tables
 *	Place a `seeds.rb` file into your `db/` folder
-
-`rake db:seeds`
+*	Run `rake db:seeds`
 
 ---
 
@@ -234,6 +245,24 @@ Delete
 
 ---
 
+##Models
+###Summary
+*	We want to store our data in a persistent manner, so we need databases.
+*	Communicating with databases in SQL is complex, so we use ActiveRecord models to help us.
+*	ActiveRecord models are just Ruby Objects, so we can call methods on them and pass them around like any other object.
+*	Each Model *class* maps to a database table 
+	*	`>> User.all`
+	*	`>> User.create first_name: 'Salman'`
+	*	`>> User.find(1)`
+*	Each Model *instance* maps to a single record in a table in the database
+	*	`>> user = User.find(1)`
+	*	`=> #<User:0x007fcf8e9eebd8>`
+	*	`>> user.id`
+	*	`=> 1`
+	*	`>> user.update last_name: 'Ansari'`
+
+
+---
 
 ##MVC
 ###Model View Controller
