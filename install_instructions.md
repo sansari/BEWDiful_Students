@@ -55,40 +55,75 @@ BACK-END WEB DEVELOPMENT
 				You should get 
 
 					rvm 1.20.13 or higher.
+
 		* 	For Ruby
 
 			*	```ruby -v```
 			
-				You should get 
+				You should get ruby 2.0.0p0 or higher.
 
-					ruby 2.0.0p0 or higher.
+##Ubuntu Linux Users
 
-		* 	For Rails
+Commands that look like ```this``` should be entered into your Terminal
+application.
 
-			*	```rails -v```
-				
-				You should get 
-				
-					Rails 3.2.13 or higher.
+1. __Open a terminal window__
+  * http://askubuntu.com/questions/196212/how-do-you-open-a-command-line
 
+2. __Install git__
+  * ```sudo apt-get install build-essential git-core```
+  * Set your git name and email:
+    * https://help.github.com/articles/setting-your-email-in-git
+    * https://help.github.com/articles/setting-your-username-in-git
 
-Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1
-)
+3. __Install curl__
+  * ```sudo apt-get install curl```
+
+4. __Install RVM__
+  * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
+  * The backslash in font of "curl" is not a typo.
+  * ```rvm use 2.0.0 --default```
+	*	Make sure the latest versions of RVM and Ruby were installed, run the commands below:
+		*	For RVM
+			*	```rvm -v```
+				You should get rvm 1.0.0 or higher.
+		* 	For Ruby
+
+			*	```ruby -v```
+				You should get ruby 2.0.0p0 or higher.
+
 ##Windows Users
 
-Ruby Installer:
+1. __Install VirtualBox__
+  * https://www.virtualbox.org/wiki/Downloads
 
-To get started you are going to use the Rails installer by rubyinstaller.org, and then schedule time with the instructional team to upgrade your Ruby and Rails versions after class.
+2. __Download Ubuntu Linux__
+  * http://www.ubuntu.com/download/desktop
+  * Version 13.04 is probably preferable but 12.04 is also fine.
 
+3. __Create your virtual machine__
+  * Open VirtualBox and click the "New" button
+  * Enter any name
+  * Select "Linux" as the type
+  * Select either "Ubuntu" or "Ubuntu (64 bit)" as the version depending on
+    which you downloaded.
+  * Memory size is the amount of your RAM that will be used to run
+    Linux. 1024MB should be more than enough, but if you have a lot of
+    RAM you can boost this number. If your machine only has 1GB of RAM
+    then 512MB will have to do. If you're not sure, don't worry because
+    this value can be changed later.
+  * Hard drive - Select "Create a virtual hard drive now" then use the
+    "VDI" type and then the "Dynamically allocated" option. Name the
+    virtual hard drive file anything and select an amount of hard drive
+    space that your computer is capable of supporting. 8GB should be plenty.
+  * After clicking "Create", select the new virtual machine you created
+    in the left column and press the "Start" button.
+  * In the "Select start-up disk" window, select the Ubuntu Linux .iso
+    file you downloaded and press start. You can then follow the Ubuntu
+    installation instructions.
 
-*	Go to [http://railsinstaller.org/](http://railsinstaller.org/).
-*	Grab the 1.9 version (we will upgrade later). This will set up your environment and you can start working with git right away.
-		
-
-__Extra command line tools:__
-	
-We will be using the command line a lot during this course. On Windows we also suggest installing gow. Gow is a bunch of unix command line tools ported to Windows. It will make it easy to follow in class with the same commands as your Mac buddies. https://github.com/bmatzelle/gow/wiki
-
+4. __Setup Ubuntu__
+  * Now see the the installation instructions for Ubuntu Linux!
 
 ##Happy Coding :)
 
