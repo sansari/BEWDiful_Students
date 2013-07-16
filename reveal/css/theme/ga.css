@@ -9,7 +9,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  
+
  }
 
 .reveal {
@@ -17,14 +17,14 @@ body {
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: black; 
+  color: black;
   }
 
  ::selection {
   color: white;
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
-  
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -40,16 +40,15 @@ body {
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
-  text-shadow: none; 
+  text-shadow: none;
   }
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   }
 
 .reveal h3 {
   font-family: "PFDinPro", sans-serif;
-  color: red;
   }
 
 /*********************************************
@@ -80,11 +79,11 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
- 
+
  img{
    float: right;
  }
- 
+
   #icon{
    float: left;
  }
@@ -155,7 +154,7 @@ body {
 .reveal h2 {
   margin-bottom: .5em;
   font-weight: 500; }
-  
+
 .reveal .slides {
   text-align: left; }
 .reveal blockquote {
