@@ -36,14 +36,16 @@ application. It can be found in Applications/Utilities.
   * ```rvm use 2.0.0 --default```
   * Make sure the latest versions of RVM and Ruby were installed, run the commands below:
     * For RVM
+
       * ```rvm -v```
 
-        You should get rvm 1.0.0 or higher.
-    *   For Ruby
+					rvm 1.20.13 or higher.
 
-      * ```ruby -v```
+		* For Ruby
 
-        You should get ruby 2.0.0p0 or higher.
+			*	```ruby -v```
+			
+				You should get ruby 2.0.0p0 or higher.
 
 ##Ubuntu Linux Users
 
@@ -66,14 +68,14 @@ application.
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
   * The backslash in font of "curl" is not a typo.
   * ```rvm use 2.0.0 --default```
-  * Make sure the latest versions of RVM and Ruby were installed, run the commands below:
-    * For RVM
-      * ```rvm -v```
-        You should get rvm 1.0.0 or higher.
-    *   For Ruby
+	*	Make sure the latest versions of RVM and Ruby were installed, run the commands below:
+		*	For RVM
+			*	```rvm -v```
+				You should get rvm 1.0.0 or higher.
+		* 	For Ruby
 
-      * ```ruby -v```
-        You should get ruby 2.0.0p0 or higher.
+			*	```ruby -v```
+				You should get ruby 2.0.0p0 or higher.
 
 ##Windows Users
 
