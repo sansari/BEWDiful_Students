@@ -4,6 +4,8 @@
     <%= link_to story.title, story.link %>
   </header>
   <p>Upvotes: <%= story.upvotes %> | 
-  Category: <%= story.category %> |</p>
+  Category: <%= story.category %> |
+  <%= link_to "More Details", story_path(story) %>
+  </p>
   </li>
 </article>

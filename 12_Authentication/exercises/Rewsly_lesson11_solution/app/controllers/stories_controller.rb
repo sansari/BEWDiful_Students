@@ -3,6 +3,11 @@ class StoriesController < ApplicationController
     @stories = Story.search_for params[:q]
   end
 
+  def search
+    @stories = Story.search_for params[:q]
+    render :index
+  end
+
   def show
     @story = Story.find params[:id]
   end
