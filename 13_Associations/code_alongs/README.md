@@ -53,7 +53,7 @@ Students will use this diagram and replicate the same steps to outline Netflix r
 
 ####Task Instructions
 
-*	Start with the Rewsly solution from Lesson 12 code-along: [Rewsly](../12_Authentication/code_alongs/Rewsly_Devise_solution)
+*	Start with the Rewsly solution from Lesson 12 code-along: [Rewsly](https://github.com/sansari/BEWDiful_Students/tree/master/12_Authentication/code_alongs/Rewsly_Devise_solution)
 *	To help visualize what you will be building, look at the completed app (the app, not the code) before the code along.
 *	As a class identify what models are missing.
 *	Add comments model.
