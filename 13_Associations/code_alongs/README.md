@@ -9,7 +9,7 @@
 | __Topics__ |associations diagrams, | 
 
 
-####Key Teaching Points
+####Key Learning Points
 
 *	We want to introduce the following associations:
 	*	__belongs_to__
