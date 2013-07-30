@@ -1,3 +1,23 @@
 <h1><%= @story.title %></h1>
-<p><%= link_to @story.link, @story.link %>
+<h2>by <%= @story.user.email %></h1>
+
+<p>Direct Link: <%= link_to @story.link, @story.link %>
+
+<h3>Commenters:</h3>
+
+<ul>
+  <% @story.commenters.each do |commenter| %>
+    <li><%=commenter.email%></li>
+  <% end %>
+</ul>
+
+<h3>Comments:</h3>
+
+<ul>
+  <% @story.comments.each do |comment| %>
+    <li><%=comment.user.email%>: <%=comment.body%></li>
+  <% end %>
+</ul>
+
+<br/><br/>
 <p><%= link_to "Back to home page", root_path %></p>
