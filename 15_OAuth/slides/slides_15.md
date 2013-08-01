@@ -10,7 +10,7 @@
 
 ##Agenda
 
-*	Associations Review (Rewsly)
+*	Associations Review (Movie App)
 *	Defining Oauth
 *	Getting Permission From Twitter
 *	OmniAuth Twitter Gem
