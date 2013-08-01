@@ -1,0 +1,30 @@
+Shows List Page:
+
+=> i want to see a list of shows
+
+As a user, when I visit the home page, then I should see a list of shows.
+Each show should include the Show Name, and the Show Picture.
+
+As an admin, when I visit the home page, then I should see a "Add Show" button.
+When I click the "Add Show" button, I should be taken to a New Show page.
+When I fill in the Show Name and Show Picture and click submit, I should see a success message.
+Then when I visit the home page, I should see the new show in the list.
+
+As an admin, when I visit the home page, then I should see an "Edit Show" button.
+When I click the "Edit Show" button, I should be taken to a Edit Show page.
+When I fill in the Show Name and Show Picture and click submit, I should see a success message.
+Then when I visit the home page, I should see the edited show in the list.
+
+As a user, when I visit the home page, then I should see a list of shows.
+When I click the "Show Episodes" link, then I should be taken to the Episodes Page.
+
+
+Episode List Page (for a show):
+
+=> i want to see a list of episodes for the show
+=> i want to be able to click to see details for an episode
+
+
+Episode Detail page:
+
+=> i want to be able to watch the episode
